@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحه الرئيسيه</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Tahoma', sans-serif;
+      background-image: url('IMG7.JPG');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85); /* رأس الصفحة بلون أسود */
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .logo span {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box {
+      background-color: white;
+      color: #222;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 90%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .text-box h1 {
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+
+    .text-box p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .video-box {
+      max-width: 800px;
+      width: 90%;
+    }
+
+    .video-box video {
+      width: 100%;
+      border: 4px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #eee;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <div class="logo">
+      <img src="IMG18.png" alt="شعار">
+      <span>ميترو الرياض</span>
+    </div>
+    <nav>
+      <a href="startpagee.html">الرئيسية</a>
+      <a href="secondpage.html">المسارات</a>
+      <a href="#">الدرب</a>
+      <a href="#">تواصل</a>
+    </nav>
+  </header>
+
+  <!-- المحتوى -->
+  <main>
+    <!-- النص أولاً -->
+    <div class="text-box">
+      <h1>مشروع ميترو الرياض</h1>
+      <p>‎مترو الرياض،نظام نقل سريع يخدم سكان الرياض عاصمة المملكة العربية السعودية، افتتحه خادم  الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود في 25 جمادى الأولى 1446هـ/27 نوفمبر 2024م
+‎ويُشكّل العمود الفقري لنظام النقل العام في المدينة، وتشرف على تنفيذه الهيئة الملكية لمدينة الرياض، وهو واحد من ثلاثة أنظمة نقل جماعي تعمل طوال أيام الأسبوع،للمزيد من المعلومات عن ميترو الرياض شاهد الفيديو.
+
+      </p>
+    </div>
+
+    <!-- الفيديو بعد النص -->
+    <div class="video-box">
+      <video controls>
+        <source src="video/mp4" type="video/mp4">
+       
+      </video>
+    </div>
+  </main>
+
+  <!-- تذييل الصفحة -->
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة - تصميم أنيق
+  </footer>
+
+</body>
+</html>
